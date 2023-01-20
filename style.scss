@@ -1,0 +1,96 @@
+$apple-color: #000; // color of the apple logo
+$leaf-color: #00b140; // color of the leaves
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.iphone{
+  max-width:230px;
+  max-height:430px;
+  min-width:230px;
+  min-height:430px;
+  border:8px solid #000;
+  box-sizing: border-box;
+  border-radius:36px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:8px;
+  background:#101010;
+  position:relative;
+  .bootingAnimation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding-bottom:40px;
+    .logo{
+      font-size:44px;
+      color:#fff;
+      // margin:10px;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+  }
+  .dynamicIsland{
+    min-width:70px;
+    min-height:18px;
+    max-width:50px;
+    max-height:18px;
+    border-radius:36px;
+    background:#000;
+    position:absolute;
+    top:8px;
+    border:1px solid #202020;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    
+    .frontCamera{
+      border:1px solid #150a41;
+      width:12px;
+      height:12px;
+      margin-left:6px;
+      background:#000;
+      border-radius:20px;
+      margin-right:2px;
+    }
+  }
+  
+  .loader{
+    min-width:140px;
+    min-height:3px;
+    max-width:140px;
+    max-height:3px;
+    birder-radius:4px;
+    background:#000;
+    .filled{
+      background:#fff;
+      min-width:90px;
+      min-height:3px;
+      max-width:70px;
+      max-height:3px;
+    }
+  }
+}
+
+.glow {
+  font-size: 44px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 0.8s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffffff24, 0 0 20px #ffffff24, 0 0 30px #ffffff24, 0 0 40px #ffffff24;
+    // , 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #ffffff24, 0 0 30px #101010, 0 0 40px #101010, 0 0 50px #101010, 0 0 60px #101010, 0 0 70px #101010, 0 0 80px #101010;
+  }
+}
